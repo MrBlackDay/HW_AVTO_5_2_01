@@ -24,18 +24,4 @@ public class IbankTest {
                 .shouldHave(Condition.exactText("Личный кабинет"), Duration.ofSeconds(5))
                 .shouldBe(Condition.visible);
     }
-
-
-    /*@Test
-    @DisplayName("Should successfully")
-    void shouldnotSuccessfully(){
-        open("http://localhost:9999");
-        var registeredUser = getRegisteredUser ("active");
-        $("[data-test-id='login'] input").setValue(registeredUser.getLogin());
-        $("[data-test-id='password'] input").setValue(registeredUser.getPassword());
-        $("button.button").click();
-        $("h2")
-                .shouldHave(Condition.exactText("Личный кабинет"), Duration.ofSeconds(15))
-                .shouldBe(Condition.visible);
-    }*/
 }
